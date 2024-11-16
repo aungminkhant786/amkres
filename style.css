@@ -1,0 +1,216 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: gill sans, sans-serif;
+    background-color: #16A085;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+.topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensures full width */
+    z-index: 1000;
+    background-color: #2C3E50;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #BDC3C7;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+}
+
+.topnav .name {
+    color: #ECF0F1;
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    padding: 14px 16px;
+    margin-right: auto;
+    margin-left: 35px;
+}
+
+.topnav a {
+    color: #ECF0F1;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 14px 16px;
+    margin-right: 30px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    border: 2px solid transparent;
+}
+
+.topnav a:hover {
+    background-color: #16A085;
+    color: #FFFFFF;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+    border-color: #1ABC9C;
+    transform: translateY(-2px);
+}
+
+/* Section Styling */
+section {
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh; /* Ensures each section takes the full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 60px; /* Adjust for fixed nav height */
+}
+
+/* Home Section */
+.home {
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+.welcome {
+    text-align: center;
+    font-size: 60px;
+    margin: 0;
+}
+
+.welcome span {
+    color: rgb(217, 49, 105);
+}
+
+.hometext h2 {
+    font-size: 40px;
+}
+
+.hometext h3 {
+    font-size: 30px;
+}
+
+.hometext span {
+    color: rgb(217, 49, 105);
+}
+
+/* Ensuring Circular Images */
+.homeimg {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.aboutme {
+    background-image: url(bck2.jpg);
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+.aboutmediv, .education {
+    background-color: rgba(73, 208, 226, 0.8); /* White with transparency */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: justify;
+}
+
+.aboutme h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* Photos Section */
+.photos {
+    background-image: url(bck3.jpg);
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+.photos h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.photoimg {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.tribute {
+    background-image: url(bck4.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding-top: 10px;
+}
+
+.tribute h1 {
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    padding-top: 30px;
+}
+
+.tributediv {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #bdf2f2;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.triburediv p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.ronaldodiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ronaldoimg {
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+}
+
+.thanks {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 2rem;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .topnav a {
+        font-size: 15px;
+    }
+    .welcome {
+        font-size: 40px;
+    }
+    .hometext h2 {
+        font-size: 30px;
+    }
+    .homeimg, .photoimg {
+        width: 150px;
+        height: 150px;
+    }
+}
