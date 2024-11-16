@@ -66,6 +66,7 @@ section {
     justify-content: flex-end;
     align-items: center;
     padding-top: 60px; /* Adjust for fixed nav height */
+    padding-bottom: 10%;
 }
 
 /* Home Section */
